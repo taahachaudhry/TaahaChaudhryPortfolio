@@ -1,0 +1,24 @@
+// Typography
+//
+// Contains the overall typography of site
+
+$base-font: 'Lato', Arial, sans-serif;
+$base-font-size: 14px;
+$main-font-color: $black;
+
+html,
+body {
+  font-family: $base-font;
+  font-size: $base-font-size;
+  color: $main-font-color;
+}
+
+h1 {
+  font-size: 1.4285rem;
+  font-weight: 300;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+}

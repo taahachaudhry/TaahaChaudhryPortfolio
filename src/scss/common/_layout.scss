@@ -1,0 +1,22 @@
+// General layout
+//
+// Contains the overall layout and commonly used layout components
+
+html,
+body {
+  height: 100%;
+  background: $background-color;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: calc(100% - 140px);
+  max-width: 1400px;
+  padding: 70px 0;
+  margin: 0 auto;
+}
+
+.clear {
+  clear: both;
+}

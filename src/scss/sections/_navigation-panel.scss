@@ -1,0 +1,44 @@
+.navigation-panel {
+  position: relative;
+  width: 15%;
+  height: calc(100% - 70px);
+  min-width: 200px;
+  padding: 70px 40px 0;
+
+  img {
+    width: 100%;
+  }
+
+  .divider {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background-color: $grey;
+  }
+}
+
+.nav-links {
+  position: absolute;
+  top: 40%;
+  right: 0;
+  left: 0;
+
+  li {
+    padding-bottom: 30px;
+    text-align: center;
+
+    a {
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 24px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    .active {
+      font-weight: 700;
+    }
+  }
+}
