@@ -42,3 +42,33 @@
     }
   }
 }
+
+.nav-footer {
+  position: absolute;
+  right: 0;
+  bottom: 10%;
+  left: 0;
+  text-align: center;
+
+  p {
+    font-size: 18px;
+  }
+
+  .social-icons {
+    margin-bottom: 30px;
+
+    li {
+      display: inline-block;
+      margin: 10px 4px;
+    }
+
+    a {
+      display: block;
+      font-size: 22px;
+
+      &:hover {
+        color: $grey;
+      }
+    }
+  }
+}
