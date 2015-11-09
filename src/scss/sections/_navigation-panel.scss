@@ -1,8 +1,7 @@
 .navigation-panel {
-  position: relative;
-  width: 15%;
+  float: left;
+  width: 210px;
   height: calc(100% - 70px);
-  min-width: 200px;
   padding: 70px 40px 0;
 
   img {
