@@ -67,6 +67,12 @@
       font-size: 22px;
 
       &:hover {
+        color: $black;
+      }
+    }
+
+    &:hover {
+      li {
         color: $grey;
       }
     }
