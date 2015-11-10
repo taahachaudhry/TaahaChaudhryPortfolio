@@ -2,7 +2,9 @@
   "name": "package",
   "version": "0.0.0",
   "dependencies": {
-    "jquery": "^2.1.4"
+    "jquery": "^2.1.4",
+    "jquery-bridget": "^1.1.0",
+    "masonry-layout": "^3.3.2"
   },
   "devDependencies": {
     "browserify": "^11.0.1",

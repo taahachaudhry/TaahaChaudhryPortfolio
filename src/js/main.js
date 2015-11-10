@@ -1,6 +1,9 @@
 global.jQuery = require('jquery');
 var $ = global.jQuery;
 
+require('jquery-bridget');
+require('masonry-layout');
+
 // var $navLink = $('.nav-links a');
 
 // add active class to active linked
@@ -18,6 +21,15 @@ function activeNavigationLink() {
   // });
 }
 
+function projectLayout() {
+  $('.project-list').masonry({
+    itemSelector: '.project-item',
+    columnWidth: '.grid-sizer',
+    gutter: '.gutter-width'
+  });
+}
+
 $('document').ready(function() {
   activeNavigationLink();
+  projectLayout();
 });
