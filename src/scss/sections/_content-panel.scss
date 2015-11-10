@@ -2,5 +2,7 @@
   float: right;
   width: calc(100% - 350px);
   height: calc(100% - 60px);
-  padding: 30px;
+  padding: 0 30px;
+  margin: 30px 0;
+  overflow: overlay;
 }
