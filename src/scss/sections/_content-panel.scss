@@ -6,3 +6,30 @@
   margin: 30px 0;
   overflow: overlay;
 }
+
+.page-loader {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99999;
+  background: $background-color;
+
+  .page-loader-gif {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: -32px 0 0 -32px;
+    background: url('../assets/images/preloader.gif') no-repeat;
+  }
+
+  @media(max-width: 767px) {
+    .page-loader-gif {
+      top: 10%;
+    }
+  }
+}
