@@ -6,9 +6,9 @@ require('masonry-layout');
 
 $(document).ready(function() {
 
-  projectLayout();
+  initBeforeLoad();
 
-  $(window).load(function() {
+  $(window).on("load resize", function() {
     setTimeout(function(){
       $('.page-loader').fadeOut(500,function() {
         init();
@@ -16,12 +16,29 @@ $(document).ready(function() {
     }, 500);
 	})
 
-  function init() {
-    activeNavigationLink();
-    // projectLayout();
+  $(window).on("resize", function() {
+    $('.page-loader').css('display', 'block');
+    init();
+	})
+
+  function initBeforeLoad() {
+    projectLayout();
   }
 
-  // var $navLink = $('.project-list .project-item');
+  function init() {
+    initBeforeLoad();
+    activeNavigationLink();
+  }
+
+  function projectLayout() {
+    $('.project-list').masonry({
+      itemSelector: '.project-item',
+      columnWidth: '.grid-sizer',
+      gutter: '.gutter-width'
+    });
+  }
+
+  var $projectLink = $('.project-list .project-item');
 
   // add active class to active linked
   function activeNavigationLink() {
@@ -37,16 +54,10 @@ $(document).ready(function() {
     //   $navLink.removeClass('active');
     //   $(this).addClass('active');
     // });
-    var hash = window.location.hash.slice(1);
-    $('.project').hide();
-    $('#' + hash).show();
-  }
-
-  function projectLayout() {
-    $('.project-list').masonry({
-      itemSelector: '.project-item',
-      columnWidth: '.grid-sizer',
-      gutter: '.gutter-width'
-    });
+    $projectLink.on('click', function () {
+      var hash = window.location.hash.slice(1);
+      $('.project').hide();
+      $('#' + hash).show();
+    })
   }
 });
