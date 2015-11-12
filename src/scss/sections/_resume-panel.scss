@@ -9,4 +9,100 @@
   background-color: $paper-white;
   border: 1px solid $paper-white;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(128, 128, 128, 0.1) inset;
+
+  @media(max-width:767px) {
+    display: block;
+    float: none;
+    width: 90%;
+    height: auto;
+    padding: 0;
+    margin: 10px auto;
+  }
+}
+
+.main-details {
+  padding: 25px 35px;
+  border-bottom: 1px solid $resume-blue;
+  animation-delay: 1s;
+  animation-duration: 1s;
+
+  h2,
+  h3 {
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+  }
+
+  h2 {
+    font-size: 2rem;
+    line-height: 34px;
+    color: $resume-blue;
+  }
+
+  h3 {
+    font-size: 1.35rem;
+    line-height: 24px;
+  }
+
+  .resume-pic {
+    float: left;
+    width: 12.5%;
+    margin-right: 30px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .name {
+    float: left;
+
+    p {
+      font-style: italic;
+      letter-spacing: 0.5px;
+      text-align: right;
+    }
+  }
+
+  .resume-contact {
+    float: right;
+
+    ul {
+      margin-top: 5px;
+      font-size: 0.9em;
+    }
+
+    li {
+      margin-bottom: 3px;
+
+      a {
+        color: $resume-blue;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  @media(max-width:950px) {
+    .resume-pic {
+      display: none;
+    }
+
+    .name,
+    .resume-contact {
+      float: none;
+      width: 100%;
+      text-align: center;
+
+      p {
+        text-align: center;
+      }
+    }
+
+    .resume-contact {
+      li {
+        margin: 0;
+      }
+    }
+  }
 }
