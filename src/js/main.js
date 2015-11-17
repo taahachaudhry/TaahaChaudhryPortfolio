@@ -4,6 +4,9 @@ var $ = global.jQuery;
 require('jquery-bridget');
 require('masonry-layout');
 
+require('jquery.easing');
+require('magnific-popup');
+
 function initBeforeLoad() {
   initialLayout();
   projectLayout();
@@ -31,6 +34,10 @@ function initialLayout() {
   }
 }
 
+function imagePopup() {
+  $('.wireframe-link').magnificPopup({type:'image'});
+}
+
 $(document).ready(function() {
 
   initBeforeLoad();
@@ -39,7 +46,9 @@ $(document).ready(function() {
     initBeforeLoad();
     $('.page-loader').css('display', 'block');
     setTimeout(function(){
-      $('.page-loader').fadeOut(500);
+      $('.page-loader').fadeOut(500, function () {
+        imagePopup();
+      });
     }, 500);
 	})
 });
