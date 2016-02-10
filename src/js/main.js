@@ -46,6 +46,7 @@ $(document).ready(function() {
 
   initialLayout();
   imageLoad();
+  imagePopup();
 
   $(window).on("load resize hashchange", function() {
     initBeforeLoad();
@@ -55,6 +56,5 @@ $(document).ready(function() {
         imagePopup();
       });
     }, 500);
-    imagePopup();
 	})
 });
