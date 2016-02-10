@@ -16,7 +16,7 @@
 
     <div class="container">
       <div class="navigation-panel">
-        <a href="/"><img src="/assets/images/logo.jpg" alt="logo" /></a>
+        <a href="/" class="logo"><img src="/assets/images/logo.jpg" alt="logo" /></a>
 
         <ul class="nav-links">
           <li>
@@ -30,24 +30,65 @@
           </li>
         </ul>
 
-        <div class="nav-footer">
-          <p>714.399.5995</p>
-          <ul class="social-icons">
-            <li><a href="mailto:taahac@taahac.me" target="_blank"><i class="fa fa-envelope fa-fw"></i></a></li>
-            <li><a href="https://twitter.com/taahachaudhry" target="_blank"><i class="fa fa-twitter fa-fw"></i></a></li>
-            <li><a href="http://www.linkedin.com/in/taahachaudhry" target="_blank"><i class="fa fa-linkedin fa-fw"></i></a></li>
-            <li><a href="https://github.com/taahachaudhry" target="_blank"><i class="fa fa-github fa-fw"></i></a></li>
-          </ul>
-          <p class="copyright">© 2015 - Taaha Chaudhry.<br/> All Rights Reserved.</p>
-        </div>
-
         <div class="divider"></div>
       </div>
 
+      <!--
       <div class="content-panel">
         <div class="page-loader"><span class="page-loader-gif"></span></div>
 
         <div class="project-content">
+          <div class="project" id="idean">
+            <div class="project-title">
+              <h1 class="title">Idean</h1>
+              <p class="tagline tag">DEVELOPMENT</p>
+              <p class="tagline tag">WEB</p>
+              <p class="tagline">Professional work at Idean as a UI Developer</p>
+              <p class="tagline">Date: Jan 2015 - current</p>
+            </div>
+
+            <img src="/assets/images/projects/idean/idean-collage.png" alt="idean" class="project-main-image"/>
+
+            <h1>Overview</h1>
+            <p>
+              Idean is a global creative design agency dedicated to delivering the best possible CX, UX, &amp; UI.
+              Here at Idean, we began the process with user insight and
+            </p>
+
+            <h1>&#8544;: Dispute Management Tool</h1>
+            <p>
+              At my first project at Idean, I, along with a Lead Senior UI Developer, built an online dispute resolution management tool.
+              I mainly took care of the common components and the structure of the web application, while implementing some functionality.
+              Some of the technologies used were Backbone.js with Marionette.js, Underscore.js, and jQuery, along with build tools,
+              such as Bower, Gulp, Sass and r.js, and an AMD pattern.
+            </p>
+            <p class="tagline">Tech Stack: Backbone.js with Marionette.js, Underscore.js, and jQuery, Bower, Gulp, Sass and r.js</p>
+
+            <h1>&#8545;: 1st Hour Site Onboarding Experience</h1>
+            <p>
+              My second project at Idean was developing the redesign of the 1st hour of onboarding for a service that matched caregivers and families together.
+              I built the main structure of this web application, along with some functionality implemenation.
+              This application was built mainly using React.js with Flummox, jQuery, and a few build tools,
+              such as Bower, Gulp, Sass. We decided to use React.js for its faster rendering due to the virtual DOM and the ability to
+              isomorphically render HTML server-side, for SEO optimization.
+            </p>
+
+            <h1 class="title">&#8546;: TV Prototype</h1>
+            <p>
+              For my first solo project at Idean, I developed a simple operator story experience prototype to be presented on TVs at a European conference.
+              This simple application was built on a very tight and short dealine, so I stuck to building a simple HTML and CSS application with JavaScript
+              and Gulp. This was a fun project, as I was challenged to write the styles optimized for TVs. I also only needed to support the
+              lastest Chrome browser so I was able to use the newest and fanciest tools, such as Flexbox.
+            </p>
+
+            <h1 class="title">&#8547;: Technology Resource Blog &amp; Site</h1>
+            <h4>&#8547;: Technology Resource Blog &amp; Site</h4>
+            <h1>&#8547;: Technology Resource Blog &amp; Site</h1>
+            <p>
+              Idean ...
+            </p>
+          </div>
+
           <div class="project" id="wasp-air">
             <div class="project-title">
               <h1 class="title">WaspAir</h1>
@@ -56,7 +97,7 @@
               <p class="tagline">Apple watch prototype</p>
             </div>
 
-            <img src="/assets/images/projects/wasp-air/wasp-air.png" alt="portfolio project" class="project-image"/>
+            <img src="/assets/images/projects/wasp-air/wasp-air.png" alt="portfolio project" class="project-main-image"/>
 
             <h1>Objective</h1>
             <p>
@@ -201,16 +242,34 @@
             <p>
               I learned quite a few things at my first big hackathon. The first was being to build a MVP in two days by working with such a large team. This was also my first time collaborating with other designers
               and having to make updates and changes as they were given to us, and seeing the product evolve from mockups to an actual visually appealing product. I also realized the benefit we would have had of conducting
-              better research and asking questions, such as maintence of the site after the hackathon was over, to better build a product.
+              better research and asking questions, such as maintenance of the site after the hackathon was over, to better build a product.
             </p>
 
             <a href="/assets/images/projects/freespace/freespace-project.png" class="image-link">
               <img src="/assets/images/projects/freespace/freespace-project.png" alt="freespace project" class="project-image"/>
             </a>
+            <a href="/assets/images/projects/freespace/atxhack.jpeg" class="image-link">
+              <img src="/assets/images/projects/freespace/atxhack.jpeg" alt="atxhack" class="project-image"/>
+            </a>
           </div>
         </div>
 
         <div class="project-panel">
+          <h1>Professional Work</h1>
+          <ul class="project-list">
+
+            <div class="grid-sizer"></div>
+
+            <div class="gutter-width"></div>
+
+            <li class="project-item">
+              <a href="#idean" id="idean-link">
+                <img src="/assets/images/thumbnails/idean.jpg" alt="idean thumbnail" />
+                <h3>Idean - UI Developer</h3>
+              </a>
+            </li>
+          </ul>
+
           <h1>Prototyping &amp; Design</h1>
           <ul class="project-list">
 
@@ -248,7 +307,18 @@
           </ul>
         </div>
       </div>
+        -->
 
+        <div class="footer">
+          <div class="divider"></div>
+          <ul class="social-icons">
+            <li><a href="mailto:taahac@taahac.me" target="_blank"><i class="fa fa-envelope fa-fw"></i></a></li>
+            <li><a href="https://twitter.com/taahachaudhry" target="_blank"><i class="fa fa-twitter fa-fw"></i></a></li>
+            <li><a href="http://www.linkedin.com/in/taahachaudhry" target="_blank"><i class="fa fa-linkedin fa-fw"></i></a></li>
+            <li><a href="https://github.com/taahachaudhry" target="_blank"><i class="fa fa-github fa-fw"></i></a></li>
+          </ul>
+          <p class="copyright">© 2016 - Taaha Chaudhry. All Rights Reserved.</p>
+        </div>
       <div class="clear"></div>
     </div>
 

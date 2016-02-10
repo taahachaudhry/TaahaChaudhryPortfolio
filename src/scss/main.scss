@@ -4,6 +4,7 @@
 @import './common/color-vars';
 @import './common/typography';
 @import './common/layout';
+@import './common/components';
 
 @import './sections/navigation-panel';
 @import './sections/content-panel';
@@ -11,7 +12,4 @@
 @import './sections/project';
 @import './sections/about-panel';
 @import './sections/resume-panel';
-
-@import './common/layout-mobile';
-
-@import './sections/navigation-panel-mobile';
+@import './sections/footer';
