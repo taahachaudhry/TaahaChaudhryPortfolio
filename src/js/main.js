@@ -4,11 +4,7 @@ var $ = global.jQuery;
 require('jquery.easing');
 require('magnific-popup');
 
-function initBeforeLoad() {
-  initialLayout();
-}
-
-function initialLayout() {
+function routesLayout() {
   $('.project').hide();
 
   var hash = window.location.hash;
@@ -44,17 +40,18 @@ function imagePopup() {
 
 $(document).ready(function() {
 
-  initialLayout();
+  routesLayout();
   imageLoad();
   imagePopup();
 
-  $(window).on("load resize hashchange", function() {
-    initBeforeLoad();
+  $(window).on("load", function() {
     $('.page-loader').css('display', 'block');
     setTimeout(function(){
-      $('.page-loader').fadeOut(500, function () {
-        imagePopup();
-      });
-    }, 500);
+      $('.page-loader').fadeOut(250);
+    }, 250);
+	})
+
+  $(window).on("load resize hashchange", function() {
+    routesLayout();
 	})
 });
