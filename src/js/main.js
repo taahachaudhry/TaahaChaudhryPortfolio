@@ -22,6 +22,12 @@ function initialLayout() {
   }
 }
 
+function imageLoad() {
+  $('.project-item img').each(function(index) {
+    $(this).hide().delay(200 * index).fadeIn(700);
+  });
+}
+
 function imagePopup() {
   $('.image-link').magnificPopup({
     type:'image',
@@ -38,7 +44,8 @@ function imagePopup() {
 
 $(document).ready(function() {
 
-  initBeforeLoad();
+  initialLayout();
+  imageLoad();
 
   $(window).on("load resize hashchange", function() {
     initBeforeLoad();
