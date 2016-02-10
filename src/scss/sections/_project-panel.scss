@@ -1,21 +1,26 @@
 .project-panel {
-  margin-bottom: 10px;
-
   h1 {
     margin-bottom: 15px;
   }
 
-  .grid-sizer {
-    width: calc(25% - 15px);
-  }
-
-  .gutter-width {
-    width: 15px;
+  .project-list {
+    width: 103%;
+    margin-top: -2.5%;
+    margin-left: -3%;
   }
 
   .project-item {
-    width: calc(25% - 15px);
-    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 30.3%;
+    margin-top: 2.5%;
+    margin-left: 3%;
+    vertical-align: top;
+
+    &:nth-child(3n+1) {
+      clear: left;
+    }
 
     img {
       width: 100%;
@@ -29,75 +34,24 @@
     }
   }
 
-  @media (max-width: 1200px) {
-    .grid-sizer {
-      width: calc(33.33% - 15px);
-    }
-
-    .project-item {
-      width: calc(33.33% - 15px);
-    }
-  }
-
-  @media (max-width: 930px) {
-    .grid-sizer {
-      width: calc(50% - 15px);
-    }
-
-    .project-item {
-      width: calc(50% - 15px);
-    }
-  }
-
   @media (max-width: 767px) {
-    .grid-sizer {
-      width: calc(33.33% - 10px);
-    }
-
-    .gutter-width {
-      width: 10;
+    .project-list {
+      margin-top: 0;
     }
 
     .project-item {
-      width: calc(33.33% - 10px);
-      margin-bottom: 10px;
+      width: 47%;
 
-      img {
-        padding-bottom: 10px;
+      &:nth-child(3n+1) {
+        clear: none;
       }
     }
   }
 
-  @media (max-width: 650px) {
-    .grid-sizer {
-      width: calc(50% - 10px);
-    }
-
-    .gutter-width {
-      width: 10;
-    }
-
+  @media (max-width: 479px) {
     .project-item {
-      width: calc(50% - 10px);
-      margin-bottom: 10px;
-
-      img {
-        padding-bottom: 10px;
-      }
-    }
-  }
-
-  @media (max-width: 320px) {
-    .grid-sizer {
-      width: 100%;
-    }
-
-    .gutter-width {
-      width: 0;
-    }
-
-    .project-item {
-      width: 100%;
+      width: 97%;
+      margin-top: 5%;
     }
   }
 }

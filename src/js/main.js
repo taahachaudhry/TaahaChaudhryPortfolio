@@ -1,23 +1,11 @@
 global.jQuery = require('jquery');
 var $ = global.jQuery;
 
-require('jquery-bridget');
-require('masonry-layout');
-
 require('jquery.easing');
 require('magnific-popup');
 
 function initBeforeLoad() {
   initialLayout();
-  projectLayout();
-}
-
-function projectLayout() {
-  $('.project-list').masonry({
-    itemSelector: '.project-item',
-    columnWidth: '.grid-sizer',
-    gutter: '.gutter-width'
-  });
 }
 
 function initialLayout() {
@@ -60,5 +48,6 @@ $(document).ready(function() {
         imagePopup();
       });
     }, 500);
+    imagePopup();
 	})
 });
