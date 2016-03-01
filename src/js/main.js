@@ -51,7 +51,7 @@ $(document).ready(function() {
     }, 250);
 	})
 
-  $(window).on("load resize hashchange", function() {
+  $(window).on("load hashchange", function() {
     routesLayout();
 	})
 });
