@@ -11,6 +11,7 @@ function routesLayout() {
   hash = hash.replace(/^#/, '');
 
   if (hash === '') {
+    $('.project').hide();
     $('.project-panel').show();
   } else {
     $('.project-panel').hide();
