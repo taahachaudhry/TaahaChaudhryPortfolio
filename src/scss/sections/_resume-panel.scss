@@ -153,8 +153,22 @@
     }
 
     .sub-details {
-      font-size: 0.8em;
-      font-style: italic;
+      h3,
+      p {
+        display: inline-block;
+        width: 49%;
+        font-style: italic;
+      }
+
+      p:last-child {
+        font-size: 0.8em;
+        text-align: right;
+      }
+    }
+
+    h3.title {
+      color: $resume-blue;
+      font-style: normal;
     }
   }
 
